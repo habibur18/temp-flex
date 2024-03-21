@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+      <div>
+        37 There is no effective difference in this instance. In fact, it's because flex is shorthand for flex-grow, flex-shrink and flex-basis combined. flex-basis defines the default size of an element before the remaining space is distributed. So in this case, you have defined all a children` to 50% of the available space.
+      </div>
+
+      <section>
+        <ul class="flex-container">
+            <li class="flex-item flex1">1</li>
+            <li class="flex-item flex2">2</li>
+          </ul
+
+          .flex-container {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            -ms-box-orient: horizontal;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+          }
+
+          .flex-item {
+            background: tomato;
+            padding: 10px;
+            border: 5px solid red;
+
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+            text-align: center;
+          }
+
+          .flex1 { flex: 5 10 10em;  }
+          .flex2 { flex: 1  1  10em; }
+          explain this code to me :  flex: 5 10 10em
+
+          ChatGPT
+          Certainly! The flex property in CSS is shorthand for specifying how a flex item should grow and shrink to fit the available space within a flex container.
+
+          In the line flex: 5 10 10em;, there are three values:
+
+          The first value (5): This represents the grow factor. It specifies how much the flex item should grow relative to other flex items within the same container when there's extra space available. In this case, the flex item with flex: 5 will grow five times as much as a flex item with flex: 1 if there's extra space in the container.
+
+          The second value (10): This represents the shrink factor. It specifies how much the flex item should shrink relative to other flex items within the same container when there's not enough space available. In this case, the flex item with flex: 5 will shrink ten times less than a flex item with flex: 1 if there's not enough space in the container.
+
+          The third value (10em): This represents the basis or the initial size of the flex item. It defines the initial width of the item before any free space is distributed according to the flex grow and flex shrink factors. In this case, the initial width of the flex item is set to 10em.
+
+          To summarize, flex: 5 10 10em; means that the flex item should grow five times as much as other flex items, shrink ten times less, and its initial width is set to 10em.
+
+
+
+
+
+
+
+      </section>
+    </div>
+  </body>
+</html>
